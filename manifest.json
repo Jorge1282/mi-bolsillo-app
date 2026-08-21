@@ -1,6 +1,6 @@
 {
-  "name": "Mi Bolsillo App",
-  "short_name": "Mi Bolsillo",
+  "name": "Tu Bolsillo App",
+  "short_name": "Tu Bolsillo App",
   "description": "Finanzas y contabilidad personal en Bs. y USD, con tasa BCV del día. Tus datos se guardan en tu teléfono, o en tu propio Google Drive si lo conectás.",
   "start_url": "./index.html",
   "scope": "./",
