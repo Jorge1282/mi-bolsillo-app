@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="apple-mobile-web-app-title" content="Mi Bolsillo App">
-<meta name="description" content="Mi Bolsillo App — finanzas y contabilidad personal en Bs. y USD, con tasa BCV del día. Tus datos se guardan solo en tu teléfono.">
-<title>Mi Bolsillo App</title>
+<meta name="apple-mobile-web-app-title" content="Tu Bolsillo App">
+<meta name="description" content="Tu Bolsillo App — finanzas y contabilidad personal en Bs. y USD, con tasa BCV del día. Tus datos se guardan solo en tu teléfono.">
+<title>Tu Bolsillo App</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#12201A">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -703,7 +703,7 @@ function downloadBlob(content, filename, mime){
 function buildFullBackup(){
   return {
     exportedAt: new Date().toISOString(),
-    app: 'Mi Bolsillo App',
+    app: 'Tu Bolsillo App',
     version: 1,
     transactions: state.transactions,
     goal: state.goal,
@@ -1536,7 +1536,7 @@ function esc(s){ return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</
 function renderAuthScreen(){
   var html = '<div class="lock-screen">';
   html += '  <div class="lock-icon" style="color:var(--gold)">' + ICONS.wallet2 + '</div>';
-  html += '  <div class="wordmark" style="font-size:28px;margin-top:14px">Mi Bolsillo App</div>';
+  html += '  <div class="wordmark" style="font-size:28px;margin-top:14px">Tu Bolsillo App</div>';
   if (state.authMode === 'setup'){
     html += '  <div class="lock-sub">Crea tu cuenta. Tus datos se guardan solo en este teléfono, no en internet.</div>';
     html += '  <div class="auth-card">';
@@ -1576,7 +1576,7 @@ function render(){
 
   var html = '';
   html += '<div class="header">';
-  html += '  <div><div class="wordmark">Mi Bolsillo App</div></div>';
+  html += '  <div><div class="wordmark">Tu Bolsillo App</div></div>';
   html += '  <div style="display:flex;align-items:center;gap:8px"><span style="color:var(--gold)">' + ICONS.wallet2 + '</span></div>';
   html += '</div>';
 
